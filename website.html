@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Junn!!! 💜</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Quicksand:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    .font-romantic {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    
+    .font-body {
+      font-family: 'Quicksand', sans-serif;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    
+    @keyframes sparkle {
+      0%, 100% { opacity: 0; transform: scale(0); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+    
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(124, 58, 237, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(124, 58, 237, 0.6); }
+    }
+    
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    .animate-float-delay {
+      animation: float 6s ease-in-out infinite;
+      animation-delay: 2s;
+    }
+    
+    .animate-sparkle {
+      animation: sparkle 2s ease-in-out infinite;
+    }
+    
+    .animate-pulse-glow {
+      animation: pulse-glow 3s ease-in-out infinite;
+    }
+    
+    .animate-fade-in {
+      animation: fade-in-up 0.8s ease-out forwards;
+    }
+    
+    .photo-frame {
+      background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);
+      border: 3px solid #c4b5fd;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .photo-frame:hover {
+      transform: scale(1.05) rotate(2deg);
+      border-color: #8b5cf6;
+    }
+    
+    .music-card {
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .music-card:hover {
+      transform: translateX(10px);
+    }
+    
+    .link-card {
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .link-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .sparkle {
+      position: absolute;
+      pointer-events: none;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body">
+  <div id="app-wrapper" class="h-full w-full overflow-auto">
+   <div id="main-bg" class="min-h-full w-full relative" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 50%, #e9d5ff 100%);"><!-- Hero Section -->
+    <header class="relative py-16 px-6 text-center">
+     <div class="sparkle absolute top-20 left-1/4 text-2xl animate-sparkle">
+      ✨
+     </div>
+     <div class="sparkle absolute top-32 right-1/4 text-xl animate-sparkle" style="animation-delay: 0.5s;">
+      ✨
+     </div>
+     <div class="sparkle absolute top-24 left-1/3 text-lg animate-sparkle" style="animation-delay: 1s;">
+      ✨
+     </div>
+     <div class="animate-fade-in">
+      <h1 id="main-title" class="font-romantic text-5xl md:text-7xl font-semibold mb-4" style="color: #7c3aed;">HAPPY BIRTHDAYYY!!!!💗</h1>
+      <p id="subtitle" class="font-romantic text-xl md:text-2xl italic" style="color: #6d28d9;">A little something I've been working on to show you how thankful I am for you 💝</p>
+      <div class="mt-8 flex justify-center gap-2">
+       <span class="inline-block w-16 h-0.5 rounded-full" style="background: #a78bfa;"></span> <span class="text-2xl">💜</span> <span class="inline-block w-16 h-0.5 rounded-full" style="background: #a78bfa;"></span>
+      </div>
+     </div>
+    </header><!-- Photo Gallery Section -->
+    <section class="py-12 px-6 max-w-6xl mx-auto" style="animation: fade-in-up 0.8s ease-out 0.2s both;">
+     <h2 id="gallery-title" class="font-romantic text-3xl md:text-4xl text-center mb-10" style="color: #7c3aed;">✨Photos of someone beautiful✨</h2>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-4"><!-- Photo 1 -->
+
+      <div class="photo-frame rounded-2xl p-3 animate-pulse-glow">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #ddd6fe 0%, #e0e7ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo3.jpeg" alt="red" width="300px" height="300px"></p>
+        </div>
+       </div>
+      </div><!-- Photo 2 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 0.5s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo2.jpeg" alt="sideways"></p>
+        </div>
+       </div>
+      </div><!-- Photo 3 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 1s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo1.jpeg" alt="filter" width="300px" height="300px"></p>
+        </div>
+       </div>
+      </div><!-- Photo 4 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 1.5s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo4.jpeg" alt="flowers"></p>
+        </div>
+       </div>
+      </div><!-- Photo 5 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 2s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo10.jpeg" alt="singing"></p>
+        </div>
+       </div>
+      </div><!-- Photo 6 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 2.5s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #ddd6fe 0%, #e0e7ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo6.jpeg" alt="medals"></p>
+        </div>
+       </div>
+      </div><!-- Photo 7 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo7.jpeg" alt="kiss"></p>
+        </div>
+       </div>
+      </div><!-- Photo 8 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 0.3s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #e9d5ff 0%, #f3e8ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo8.jpeg" alt="dress"></p>
+        </div>
+       </div>
+      </div><!-- Photo 9 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 0.6s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #f3e8ff 0%, #ddd6fe 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo9.jpeg" alt="dws"></p>
+        </div>
+       </div>
+      </div><!-- Photo 10 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 0.9s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #ede9fe 0%, #e9d5ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo5.jpeg"></p>
+        </div>
+       </div>
+      </div><!-- Photo 11 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 1.2s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #f3e8ff 0%, #e0e7ff 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo11.jpeg"></p>
+        </div>
+       </div>
+      </div><!-- Photo 12 -->
+      <div class="photo-frame rounded-2xl p-3" style="animation: pulse-glow 3s ease-in-out infinite 1.5s;">
+       <div class="aspect-square rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #ddd6fe 0%, #ede9fe 100%);">
+        <div class="text-center p-4">
+         <span class="text-4xl block mb-3"></span>
+         <p class="text-xs" style="color: #6d28d9;"><img src="photo12.jpeg"></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Story Section -->
+    <section class="py-12 px-6" style="animation: fade-in-up 0.8s ease-out 0.4s both;">
+     <div class="max-w-4xl mx-auto">
+      <h2 id="story-title" class="font-romantic text-3xl md:text-4xl text-center mb-10" style="color: #7c3aed;">📖 Our Journey 📖</h2>
+      <div id="secondary-surface-story" class="rounded-3xl p-6 md:p-8" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+       <p id="story-text" class="font-body text-base md:text-lg leading-relaxed" style="color: #6d28d9; line-height: 1.8; white-space: pre-wrap;"> On February 10th 2024, we saw each other for the first time. During the AFC final, fully expecting us to never cross paths again. Then in sometime during March, we met again.
+        We traded Insta's and there I thought again, we would never cross paths again. She would be a mutual to me, we might see each other in school once in a while etc. But then I realised I was wrong. We started talking, day after day, week after week and month after month where talking to you didn't seem like a luxury, it was a necessity.
+        Every day, texting you and talking to you was the best thing that could happen to me all day. It went from texting, to hours long voice calls on discord, to hangouts outside at the park to eventually watching Formula 1 together in Doha. A dream of mine that I never thought would come true. We have had our fair share of moments together. Moments where we both were the happiest people on the planet,
+        and times when we went so long without talking to each other it drove me crazy. This website was not just for me to show off my amazing programming skills, its to show you how much you mean to me and how much you have done for me. You have helped, guided, supported and motivated me when times were difficult, when no one was there to help me and when my own friends backstabbed me. You put the smile
+        on my face on days when I didn't feel like smiling, and you pushed me to achieve so many things in my time. Sure you can argue it's down to my hard work, but the support, the patience of handling me at times, and always creating a safe space for me to talk when I was feeling or felt low. I forever thank you for everything you have done and I feel like I need to repay them in many different ways. 
+        Words can't express how grateful I am for you, the love I have for you and the way I admire everything about you. Thank you. Thank you for everything you have given me. I love you more than you would ever know 💖</p>
+      </div>
+     </div>
+    </section><!-- Music Section -->
+    <section class="py-12 px-6" style="animation: fade-in-up 0.8s ease-out 0.4s both;">
+     <div class="max-w-4xl mx-auto">
+      <h2 id="music-title" class="font-romantic text-3xl md:text-4xl text-center mb-10" style="color: #7c3aed;">🎵 Songs that remind me of you 🎵</h2>
+      <div id="secondary-surface" class="rounded-3xl p-6 md:p-8" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);">
+       <p class="text-center mb-6" style="color: #6d28d9;">Songs that describe you🫶</p>
+
+       <div class="space-y-4"><!-- Song 1 --> <a href="https://www.youtube.com/watch?v=f5-IY_Ja1RM&list=RDf5-IY_Ja1RM&start_radio=1" target="_blank" rel="noopener noreferrer" class="music-card block rounded-2xl p-4 flex items-center gap-4" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%); border: 2px solid #c4b5fd;">
+         <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+          <span class="text-2xl">🎵</span>
+         </div>
+         <div class="flex-grow">
+          <h3 class="font-semibold" style="color: #7c3aed;">Her</h3>
+          <p class="text-sm" style="color: #6d28d9;">JVKE</p>
+
+         </div><span class="text-2xl">💜</span> </a> <!-- Song 2 --> <a href="https://www.youtube.com/watch?v=GPUg7n8-M6o&list=RDGPUg7n8-M6o&start_radio=1" target="_blank" rel="noopener noreferrer" class="music-card block rounded-2xl p-4 flex items-center gap-4" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%); border: 2px solid #c4b5fd;">
+         <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+          <span class="text-2xl">🎶</span>
+         </div>
+         <div class="flex-grow">
+          <h3 class="font-semibold" style="color: #7c3aed;">Something About You</h3>
+          <p class="text-sm" style="color: #6d28d9;">Eyedress, Dent May</p>
+
+         </div><span class="text-2xl">💜</span> </a> <!-- Song 3 --> <a href="https://www.youtube.com/watch?v=j9yEL3B5Cvk&list=RDj9yEL3B5Cvk&start_radio=1" target="_blank" rel="noopener noreferrer" class="music-card block rounded-2xl p-4 flex items-center gap-4" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%); border: 2px solid #c4b5fd;">
+         <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+          <span class="text-2xl">🎤</span>
+         </div>
+         <div class="flex-grow">
+          <h3 class="font-semibold" style="color: #7c3aed;">Touch</h3>
+          <p class="text-sm" style="color: #6d28d9;">Cigarettes After Sex</p>
+
+         </div><span class="text-2xl">💜</span> </a> <!-- Add Song Button -->
+        <div class="text-center pt-4"><a href="https://open.spotify.com/playlist/04MyRqgXR9kp5SJyuhtjWg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all hover:scale-105" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;"><span>🎧</span> <span>Open Playlist</span></a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Special Sections -->
+    <section class="py-12 px-6" style="animation: fade-in-up 0.8s ease-out 0.6s both;">
+     <div class="max-w-4xl mx-auto space-y-8"><!-- The Day We Met -->
+      <div id="section-day-we-met" class="rounded-3xl p-6 md:p-8" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+       <h3 id="day-we-met-title" class="font-romantic text-2xl md:text-3xl mb-4" style="color: #7c3aed;">🌟 The Day We Met 🌟</h3>
+       <p id="day-we-met-text" class="text-base md:text-lg leading-relaxed" style="color: #6d28d9; white-space: pre-wrap;">At the Dukhan Cinema during the Asian Cup AFC Final. We were both there to watch the game sitting in the same row.</p>
+      </div><!-- Birthday -->
+      <div id="section-birthday" class="rounded-3xl p-6 md:p-8" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+       <h3 id="birthday-title" class="font-romantic text-2xl md:text-3xl mb-4" style="color: #7c3aed;">🎂 Birthday 🎂</h3>
+       <p id="birthday-text" class="text-base md:text-lg leading-relaxed" style="color: #6d28d9; white-space: pre-wrap;">Sample text - Celebrate those special birthday moments together.</p>
+      
+      </div>
+     </div>
+    </section><!-- Timeline Section -->
+    <section class="py-12 px-6" style="animation: fade-in-up 0.8s ease-out 0.7s both;">
+     <div class="max-w-4xl mx-auto">
+      <h2 id="timeline-title" class="font-romantic text-3xl md:text-4xl text-center mb-12" style="color: #7c3aed;">⏰ Our Timeline ⏰</h2>
+      <div class="space-y-8"><!-- Timeline Event 1 -->
+       <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;">
+          <span>1️⃣</span>
+         </div>
+         <div class="w-1 h-16 mt-2" style="background: #c4b5fd;"></div>
+        </div>
+        <div class="rounded-2xl p-6 mt-2 flex-grow" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+         <p id="timeline-event-1" class="text-lg font-semibold" style="color: #7c3aed;">The Day We Met - January 2020</p>
+        </div>
+       </div><!-- Timeline Event 2 -->
+       <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;">
+          <span>2️⃣</span>
+         </div>
+         <div class="w-1 h-16 mt-2" style="background: #c4b5fd;"></div>
+        </div>
+        <div class="rounded-2xl p-6 mt-2 flex-grow" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+         <p id="timeline-event-2" class="text-lg font-semibold" style="color: #7c3aed;">First Date - February 2020</p>
+        </div>
+       </div><!-- Timeline Event 3 -->
+       <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;">
+          <span>3️⃣</span>
+         </div>
+         <div class="w-1 h-16 mt-2" style="background: #c4b5fd;"></div>
+        </div>
+        <div class="rounded-2xl p-6 mt-2 flex-grow" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+         <p id="timeline-event-3" class="text-lg font-semibold" style="color: #7c3aed;">Anniversary - January 2021</p>
+        </div>
+       </div><!-- Timeline Event 4 -->
+       <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;">
+          <span>4️⃣</span>
+         </div>
+        </div>
+        <div class="rounded-2xl p-6 mt-2 flex-grow" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+         <p id="timeline-event-4" class="text-lg font-semibold" style="color: #7c3aed;">Special Trip - Summer 2021</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Quiz Section -->
+    <section class="py-12 px-6" style="animation: fade-in-up 0.8s ease-out 0.75s both;">
+     <div class="max-w-4xl mx-auto">
+      <h2 id="quiz-title" class="font-romantic text-3xl md:text-4xl text-center mb-8" style="color: #7c3aed;">🎯 How Well Do You Know Us? 🎯</h2>
+      <div id="quiz-container" class="rounded-3xl p-6 md:p-8" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid #c4b5fd;">
+       <div id="quiz-content"></div>
+       <div id="quiz-score" class="hidden mt-6 text-center p-6 rounded-2xl" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%);">
+        <p class="text-xl font-semibold mb-2" style="color: #7c3aed;">Your Score:</p>
+        <p class="text-4xl font-bold" style="color: #8b5cf6;" id="score-display">0/5</p><button onclick="resetQuiz()" class="mt-4 px-6 py-2 rounded-full font-medium transition-all hover:scale-105" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;">Try Again</button>
+       </div>
+      </div>
+     </div>
+    </section><!-- Footer -->
+    <footer class="py-12 px-6 text-center" style="animation: fade-in-up 0.8s ease-out 0.9s both;">
+     <div class="mb-6">
+      <span class="text-4xl">💝💖</span>
+     </div>
+     <p id="footer-message" class="font-romantic text-2xl md:text-3xl italic mb-4" style="color: #7c3aed;">Forever &amp; Always</p>
+     <div class="flex justify-center gap-2 items-center">
+      <span class="inline-block w-12 h-0.5 rounded-full" style="background: #c4b5fd;"></span> <span>✨</span> <span class="inline-block w-12 h-0.5 rounded-full" style="background: #c4b5fd;"></span>
+     </div>
+     <p class="mt-6 text-sm" style="color: #6d28d9;">I love you 🫶. From Izzy 💝</p>
+    </footer>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      main_title: "HAPPY BIRTHDAYYY!!!!💗",
+      subtitle: "A little something I've been working on to show you how thankful I am for you 💝",
+      gallery_title: "✨Photos of someone beautiful✨",
+      story_title: "📖 Our Journey 📖",
+      story_text: "On February 10th 2024, we saw each other for the first time. During the AFC final, fully expecting us to never cross paths again. Then in sometime during March, we met again. We traded Insta's and there I thought again, we would never cross paths again. She would be a mutual to me, we might see each other in school once in a while etc. But then I realised I was wrong. We started talking, day after day, week after week and month after month where talking to you didn't seem like a luxury, it was a necessity. Every day, texting you and talking to you was the best thing that could happen to me all day. It went from texting, to hours long voice calls on discord, to hangouts outside at the park to eventually watching Formula 1 together in Doha. A dream of mine that I never thought would come true. We have had our fair share of moments together. Moments where we both were the happiest people on the planet, and times when we went so long without talking to each other it drove me crazy. This website was not just for me to show off my amazing programming skills, its to show you how much you mean to me and how much you have done for me. You have helped, guided, supported and motivated me when times were difficult, when no one was there to help me and when my own friends backstabbed me. You put the smile on my face on days when I didn't feel like smiling, and you pushed me to achieve so many things in my time. Sure you can argue it's down to my hard work, but the support, the patience of handling me at times, and always creating a safe space for me to talk when I was feeling or felt low. I forever thank you for everything you have done and I feel like I need to repay them in many different ways. Words can't express how grateful I am for you, the love I have for you and the way I admire everything about you. Thank you. Thank you for everything you have given me. I love you more than you would ever know 💖",
+      music_title: "🎵 Songs that remind me of you 🎵",
+      timeline_title: "⏰ Our Timeline ⏰",
+      timeline_event_1: "The day we met - February 10th 2024 at the Dukhan Cinema",
+      timeline_event_2: "Officially together - January 7th 2025",
+      timeline_event_3: "First hangout - January 24th 2025",
+      timeline_event_4: "Special F1 Trip - November 28th 2025",
+      quiz_title: "🎯 How Well Do You Know Us? 🎯",
+      day_we_met_title: "🌟 The Day We Met 🌟",
+      day_we_met_text: "At the Dukhan Cinema during the Asian Cup AFC Final. We were both there to watch the game sitting in the same row.",
+      birthday_title: "🎂 Birthday 🎂",
+      birthday_text: "Tuesday 8th February 2011 and Wednesday 18th March 2009",
+      fact_file_title: "📋 Fact File 📋",
+      fact_file_text: "Sample text - Fun facts and interesting things about you and your relationship.",
+      f1_hangout_title: "🏎️ F1 Hang Out 🏎️",
+      f1_hangout_text: "Sample text - Your favorite F1 memories and moments together.",
+      footer_message: "This was 3 months worth of programming and hard work 😭. I hope you enjoy the website and I hope you understand just how much I love you. You mean everything to me and beyond and I can't imagine being with anyone other than you 💖.",
+      background_color: "#ede9fe",
+      surface_color: "rgba(255, 255, 255, 0.7)",
+      text_color: "#6d28d9",
+      primary_action_color: "#8b5cf6",
+      secondary_action_color: "#7c3aed",
+      font_family: "Quicksand",
+      font_size: 16
+    };
+    
+    let config = { ...defaultConfig };
+    let quizScore = 0;
+    let quizAnswered = 0;
+    
+    const quizQuestions = [
+      {
+        question: "When did we meet?",
+        options: ["January 15th 2024", "February 10th 2024", "February 8th 2024", "March 18th 2024"],
+        correctIndex: 1
+      },
+      {
+        question: "When did we officially get together?",
+        options: ["January 7th 2025", "January 1st 2025", "January 5th 2025", "None on the list"],
+        correctIndex: 0
+      },
+      {
+        question: "Who wins the 'I love you more dibs' argument?",
+        options: ["Obviously me 🙄", "Clearly you 😁", "lowk idk lost track 😭", "That doesn't matter we still love each other no matter what 💗"],
+        correctIndex: 0
+      },
+      {
+        question: "Am I a morning or a night owl?",
+        options: ["Both", "Neither", "Morning", "Night"],
+        correctIndex: 0
+      },
+      {
+        question: "What's my dream destination?",
+        options: ["Paris🇫🇷", "Switzerland🇨🇭", "Monaco🇲🇨", "London🇬🇧"],
+        correctIndex: 2
+      }
+    ];
+    
+    function initializeQuiz() {
+      const quizContent = document.getElementById('quiz-content');
+      quizContent.innerHTML = '';
+      quizScore = 0;
+      quizAnswered = 0;
+      
+      quizQuestions.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.className = 'mb-6';
+        questionDiv.innerHTML = `
+          <p class="font-semibold mb-3" style="color: #7c3aed;">Q${index + 1}: ${q.question}</p>
+          <div class="space-y-2">
+            ${q.options.map((option, optIndex) => `
+              <button onclick="handleQuizAnswer(${index}, ${optIndex})" class="w-full text-left px-4 py-3 rounded-lg transition-all hover:scale-105" style="background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%); color: #6d28d9; border: 2px solid #c4b5fd;">
+                ${option}
+              </button>
+            `).join('')}
+          </div>
+        `;
+        quizContent.appendChild(questionDiv);
+      });
+    }
+    
+    function handleQuizAnswer(questionIndex, optionIndex) {
+      if (quizAnswered >= quizQuestions.length) return;
+      
+      const isCorrect = optionIndex === quizQuestions[questionIndex].correctIndex;
+      if (isCorrect) quizScore++;
+      quizAnswered++;
+      
+      if (quizAnswered === quizQuestions.length) {
+        showQuizScore();
+      }
+    }
+    
+    function showQuizScore() {
+      document.getElementById('quiz-content').style.display = 'none';
+      document.getElementById('quiz-score').classList.remove('hidden');
+      document.getElementById('score-display').textContent = `${quizScore}/${quizQuestions.length}`;
+    }
+    
+    function resetQuiz() {
+      document.getElementById('quiz-content').style.display = 'block';
+      document.getElementById('quiz-score').classList.add('hidden');
+      initializeQuiz();
+    }
+    
+    async function onConfigChange(cfg) {
+      config = { ...defaultConfig, ...cfg };
+      
+      // Update text content
+      document.getElementById('main-title').textContent = config.main_title || defaultConfig.main_title;
+      document.getElementById('subtitle').textContent = config.subtitle || defaultConfig.subtitle;
+      document.getElementById('gallery-title').textContent = config.gallery_title || defaultConfig.gallery_title;
+      document.getElementById('story-title').textContent = config.story_title || defaultConfig.story_title;
+      document.getElementById('story-text').textContent = config.story_text || defaultConfig.story_text;
+      document.getElementById('music-title').textContent = config.music_title || defaultConfig.music_title;
+      document.getElementById('timeline-title').textContent = config.timeline_title || defaultConfig.timeline_title;
+      document.getElementById('timeline-event-1').textContent = config.timeline_event_1 || defaultConfig.timeline_event_1;
+      document.getElementById('timeline-event-2').textContent = config.timeline_event_2 || defaultConfig.timeline_event_2;
+      document.getElementById('timeline-event-3').textContent = config.timeline_event_3 || defaultConfig.timeline_event_3;
+      document.getElementById('timeline-event-4').textContent = config.timeline_event_4 || defaultConfig.timeline_event_4;
+      document.getElementById('quiz-title').textContent = config.quiz_title || defaultConfig.quiz_title;
+      document.getElementById('day-we-met-title').textContent = config.day_we_met_title || defaultConfig.day_we_met_title;
+      document.getElementById('day-we-met-text').textContent = config.day_we_met_text || defaultConfig.day_we_met_text;
+      document.getElementById('birthday-title').textContent = config.birthday_title || defaultConfig.birthday_title;
+      document.getElementById('birthday-text').textContent = config.birthday_text || defaultConfig.birthday_text;
+      document.getElementById('fact-file-title').textContent = config.fact_file_title || defaultConfig.fact_file_title;
+      document.getElementById('fact-file-text').textContent = config.fact_file_text || defaultConfig.fact_file_text;
+      document.getElementById('f1-hangout-title').textContent = config.f1_hangout_title || defaultConfig.f1_hangout_title;
+      document.getElementById('f1-hangout-text').textContent = config.f1_hangout_text || defaultConfig.f1_hangout_text;
+      document.getElementById('footer-message').textContent = config.footer_message || defaultConfig.footer_message;
+      
+      // Update colors
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+      
+      document.getElementById('main-bg').style.background = `linear-gradient(135deg, ${bgColor} 0%, ${adjustColor(bgColor, -5)} 50%, ${adjustColor(bgColor, -10)} 100%)`;
+      document.getElementById('secondary-surface').style.background = surfaceColor;
+      document.getElementById('secondary-surface-story').style.background = surfaceColor;
+      
+      document.getElementById('main-title').style.color = secondaryColor;
+      document.getElementById('subtitle').style.color = textColor;
+      document.getElementById('gallery-title').style.color = secondaryColor;
+      document.getElementById('story-title').style.color = secondaryColor;
+      document.getElementById('story-text').style.color = textColor;
+      document.getElementById('music-title').style.color = secondaryColor;
+      document.getElementById('day-we-met-title').style.color = secondaryColor;
+      document.getElementById('day-we-met-text').style.color = textColor;
+      document.getElementById('birthday-title').style.color = secondaryColor;
+      document.getElementById('birthday-text').style.color = textColor;
+      document.getElementById('fact-file-title').style.color = secondaryColor;
+      document.getElementById('fact-file-text').style.color = textColor;
+      document.getElementById('f1-hangout-title').style.color = secondaryColor;
+      document.getElementById('f1-hangout-text').style.color = textColor;
+      document.getElementById('footer-message').style.color = secondaryColor;
+      
+      // Update fonts
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      const fontSize = config.font_size || defaultConfig.font_size;
+      const baseFontStack = 'sans-serif';
+      
+      document.body.style.fontFamily = `${fontFamily}, ${baseFontStack}`;
+      document.body.style.fontSize = `${fontSize}px`;
+      
+      document.getElementById('main-title').style.fontSize = `${fontSize * 3}px`;
+      document.getElementById('subtitle').style.fontSize = `${fontSize * 1.5}px`;
+      document.getElementById('gallery-title').style.fontSize = `${fontSize * 2}px`;
+      document.getElementById('story-title').style.fontSize = `${fontSize * 2}px`;
+      document.getElementById('story-text').style.fontSize = `${fontSize * 1.1}px`;
+      document.getElementById('music-title').style.fontSize = `${fontSize * 2}px`;
+      document.getElementById('day-we-met-title').style.fontSize = `${fontSize * 1.7}px`;
+      document.getElementById('day-we-met-text').style.fontSize = `${fontSize * 1.05}px`;
+      document.getElementById('birthday-title').style.fontSize = `${fontSize * 1.7}px`;
+      document.getElementById('birthday-text').style.fontSize = `${fontSize * 1.05}px`;
+      document.getElementById('fact-file-title').style.fontSize = `${fontSize * 1.7}px`;
+      document.getElementById('fact-file-text').style.fontSize = `${fontSize * 1.05}px`;
+      document.getElementById('f1-hangout-title').style.fontSize = `${fontSize * 1.7}px`;
+      document.getElementById('f1-hangout-text').style.fontSize = `${fontSize * 1.05}px`;
+      document.getElementById('footer-message').style.fontSize = `${fontSize * 1.75}px`;
+    }
+    
+    function adjustColor(hex, percent) {
+      if (hex.startsWith('rgba')) return hex;
+      const num = parseInt(hex.replace('#', ''), 16);
+      const r = Math.min(255, Math.max(0, (num >> 16) + percent));
+      const g = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + percent));
+      const b = Math.min(255, Math.max(0, (num & 0x0000FF) + percent));
+      return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1)}`;
+    }
+    
+    function mapToCapabilities(cfg) {
+      return {
+        recolorables: [
+          {
+            get: () => cfg.background_color || defaultConfig.background_color,
+            set: (value) => { cfg.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+          },
+          {
+            get: () => cfg.surface_color || defaultConfig.surface_color,
+            set: (value) => { cfg.surface_color = value; window.elementSdk.setConfig({ surface_color: value }); }
+          },
+          {
+            get: () => cfg.text_color || defaultConfig.text_color,
+            set: (value) => { cfg.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+          },
+          {
+            get: () => cfg.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => { cfg.primary_action_color = value; window.elementSdk.setConfig({ primary_action_color: value }); }
+          },
+          {
+            get: () => cfg.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => { cfg.secondary_action_color = value; window.elementSdk.setConfig({ secondary_action_color: value }); }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => cfg.font_family || defaultConfig.font_family,
+          set: (value) => { cfg.font_family = value; window.elementSdk.setConfig({ font_family: value }); }
+        },
+        fontSizeable: {
+          get: () => cfg.font_size || defaultConfig.font_size,
+          set: (value) => { cfg.font_size = value; window.elementSdk.setConfig({ font_size: value }); }
+        }
+      };
+    }
+    
+    function mapToEditPanelValues(cfg) {
+      return new Map([
+        ["main_title", cfg.main_title || defaultConfig.main_title],
+        ["subtitle", cfg.subtitle || defaultConfig.subtitle],
+        ["gallery_title", cfg.gallery_title || defaultConfig.gallery_title],
+        ["story_title", cfg.story_title || defaultConfig.story_title],
+        ["story_text", cfg.story_text || defaultConfig.story_text],
+        ["music_title", cfg.music_title || defaultConfig.music_title],
+        ["timeline_title", cfg.timeline_title || defaultConfig.timeline_title],
+        ["timeline_event_1", cfg.timeline_event_1 || defaultConfig.timeline_event_1],
+        ["timeline_event_2", cfg.timeline_event_2 || defaultConfig.timeline_event_2],
+        ["timeline_event_3", cfg.timeline_event_3 || defaultConfig.timeline_event_3],
+        ["timeline_event_4", cfg.timeline_event_4 || defaultConfig.timeline_event_4],
+        ["quiz_title", cfg.quiz_title || defaultConfig.quiz_title],
+        ["day_we_met_title", cfg.day_we_met_title || defaultConfig.day_we_met_title],
+        ["day_we_met_text", cfg.day_we_met_text || defaultConfig.day_we_met_text],
+        ["birthday_title", cfg.birthday_title || defaultConfig.birthday_title],
+        ["birthday_text", cfg.birthday_text || defaultConfig.birthday_text],
+        ["fact_file_title", cfg.fact_file_title || defaultConfig.fact_file_title],
+        ["fact_file_text", cfg.fact_file_text || defaultConfig.fact_file_text],
+        ["f1_hangout_title", cfg.f1_hangout_title || defaultConfig.f1_hangout_title],
+        ["f1_hangout_text", cfg.f1_hangout_text || defaultConfig.f1_hangout_text],
+        ["footer_message", cfg.footer_message || defaultConfig.footer_message]
+      ]);
+    }
+    
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+    
+    onConfigChange(config);
+    initializeQuiz();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9caa391733fc7fac',t:'MTc3MDU0NDIyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
